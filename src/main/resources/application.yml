@@ -1,0 +1,12 @@
+logging.level.org.springframework: DEBUG
+
+db:
+  connection: http://hello
+  host: 127.0.0.1
+  port: 5601
+
+kafka.topicName: first_topic
+server.port: 8081
+parking:
+  capacity: 500
+  levels: 5
