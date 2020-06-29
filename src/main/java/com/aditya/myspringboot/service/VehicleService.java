@@ -48,9 +48,9 @@ public class VehicleService {
                     Assert.isTrue(emittedVehicle.getVehicleName().contains("honda"), "car is not honda");})
                 .doOnNext(emittedVehicle -> {
 
-                    log.info("Vehicle id is "+emittedVehicle.getVehicleId());
+                    log.info("Vehicle id is "+ emittedVehicle.getVehicleId());
                     kafkaService.produce(null, emittedVehicle);
-                }).doOnNext(emittedVehicle-> log.info("hello"));
+                }).doOnNext(emittedVehicle-> log.info("hello World"));
     }
 
     @Transactional
